@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>App de clima</title>
+</head>
+<body onload="onLoad()">
+    <h2 class="titulo">
+        <p>Aquí podrás ver el clima según tu ubicación</p>
+    </h2>
+    <div id="lds-spinner" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div  id="container">
+        <div class="block">
+            <div id="location"></div>            
+            <div id="date"></div>
+            <div id="description"></div>
+        </div>
+        <div class="block">
+            <div class="information-conatiner">
+                Temperatura                
+                <div class="info" id="temperature"></div> 
+            </div>
+            <div class="information-conatiner">  
+                Viento              
+                <div class="info" id="wind"></div>     
+            </div>
+            <div class="information-conatiner">  
+                Humedad              
+                <div class="info" id="humidity"></div>
+            </div>  
+        </div>            
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>CarlosMoragaDev</h3>
+            <ul class="socials">
+                <li><a href="https://github.com/CarlosMoragaDev"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/carlos-moraga-vergara/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <div class="footer-bottom">
+            <p>copyright &copy;2023 AppDeClima. diseñado por: <span>Carlos Moraga</span> </p>
+        </div>
+        </div>  
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+</body>
+
+
+
+</html>
